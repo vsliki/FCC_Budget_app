@@ -15,15 +15,14 @@ When the budget object is printed it should display:
 - A **list of the items in the ledger.** Each line should show the description and amount. The first 23 characters of the description should be displayed, then the amount. The amount should be right aligned, contain two decimal places, and display a maximum of 7 characters.
 - A **line displaying the category total.**
 Here is an example of the output:
-'''
+```
 *************Food*************
 initial deposit        1000.00
 groceries               -10.15
 restaurant and more foo -15.89
 Transfer to Clothing    -50.00
 Total: 923.96
-'''
-
+```
 Besides the Category class, create a function (outside of the class) called **create_spend_chart** that takes a list of categories as an argument. It should return a string that is a bar chart.
 
 The chart should show the percentage spent in each category passed in to the function. The percentage spent should be calculated only with withdrawals and not with deposits. Down the left side of the chart should be labels 0 - 100. The "bars" in the bar chart should be made out of the "o" character. The height of each bar should be rounded down to the nearest 10. The horizontal line below the bars should go two spaces past the final bar. Each category name should be written vertically below the bar. There should be a title at the top that says "Percentage spent by category".
@@ -31,7 +30,7 @@ The chart should show the percentage spent in each category passed in to the fun
 This function will be tested with up to four categories.
 
 Look at the example output below very closely and make sure the spacing of the output matches the example exactly.
-'''
+```
 Percentage spent by category
 100|          
  90|          
@@ -53,4 +52,4 @@ Percentage spent by category
         i     
         n     
         g    
-'''        
+```
